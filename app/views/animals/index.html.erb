@@ -1,0 +1,12 @@
+<h1>Wild Life Tracker</h1>
+
+<h2>Animal Tracker</h2>
+
+<ul>
+  <% @animals.each do |animal| %>
+    <li><%= link_to animal.species, animal_path(animal) %></li>
+  <% end %>
+</ul>
+
+
+<%= link_to "New Species", new_animal_path %>
